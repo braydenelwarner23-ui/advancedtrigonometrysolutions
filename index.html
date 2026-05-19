@@ -4,92 +4,173 @@
 <title>Advanced Trigonometry Solutions</title>
 
 <style>
-body {
-  margin: 0;
-  background: radial-gradient(circle at top, #1a1a1a, #050505);
-  color: white;
-  font-family: Arial, sans-serif;
+
+body{
+    margin:0;
+    background:radial-gradient(circle at top,#1b1b1b,#050505);
+    color:white;
+    font-family:Arial,sans-serif;
 }
 
-.topbar {
-  padding: 25px;
-  text-align: center;
-  font-size: 38px;
-  font-weight: bold;
-  background: #111;
-  box-shadow: 0 0 25px rgba(255,255,255,0.15);
+/* TOP BAR */
+
+.topbar{
+    padding:25px;
+
+    text-align:center;
+
+    background:#111;
+
+    box-shadow:
+        0 0 25px rgba(255,255,255,0.15);
 }
 
-.games {
-  display: flex;
-  justify-content: center;
-  padding: 70px 25px;
+.topbar h1{
+    margin:0;
+
+    font-size:42px;
 }
 
-.game {
-  width: 320px;
-  background: #141414;
-  border-radius: 25px;
-  text-decoration: none;
-  color: white;
-  overflow: hidden;
-  box-shadow: 0 0 25px rgba(255,255,255,0.15);
-  transition: 0.25s;
-  border: 1px solid rgba(255,255,255,0.12);
+.subtitle{
+    color:#aaa;
+
+    margin-top:10px;
+
+    font-size:18px;
 }
 
-.game:hover {
-  transform: scale(1.05);
-  box-shadow: 0 0 40px rgba(255,255,255,0.35);
+/* GAMES GRID */
+
+.games{
+    display:grid;
+
+    grid-template-columns:
+    repeat(auto-fit,minmax(280px,1fr));
+
+    gap:40px;
+
+    padding:50px;
 }
 
-.game img {
-  width: 140px;
-  height: 140px;
-  object-fit: contain;
-  display: block;
-  margin: 30px auto 15px auto;
+/* GAME CARD */
+
+.game{
+    background:#141414;
+
+    border-radius:25px;
+
+    overflow:hidden;
+
+    text-decoration:none;
+
+    color:white;
+
+    transition:0.25s;
+
+    border:
+    1px solid rgba(255,255,255,0.1);
+
+    box-shadow:
+    0 0 25px rgba(255,255,255,0.08);
 }
 
-.game-title {
-  padding: 20px;
-  font-size: 26px;
-  font-weight: bold;
-  text-align: center;
+.game:hover{
+    transform:scale(1.04);
+
+    box-shadow:
+    0 0 40px rgba(255,255,255,0.25);
 }
 
-.subtitle {
-  text-align: center;
-  color: #aaa;
-  margin-top: 15px;
+/* GAME IMAGE */
+
+.game img{
+    width:100%;
+    height:220px;
+
+    object-fit:contain;
+
+    background:#0d0d0d;
+
+    padding:20px;
+
+    box-sizing:border-box;
 }
+
+/* TITLE */
+
+.game-title{
+    text-align:center;
+
+    padding:22px;
+
+    font-size:28px;
+
+    font-weight:bold;
+}
+
+/* FOOTER */
+
+.footer{
+    text-align:center;
+
+    color:#777;
+
+    padding:30px;
+}
+
 </style>
 </head>
 
 <body>
 
+<!-- TOP BAR -->
+
 <div class="topbar">
-  Advanced Trigonometry Solutions
-  <div class="subtitle">Select a lesson</div>
+
+    <h1>
+        Advanced Trigonometry Solutions
+    </h1>
+
+    <div class="subtitle">
+        Educational Resources
+    </div>
+
 </div>
+
+<!-- GAMES -->
 
 <div class="games">
 
-  <a class="game" href="cookieclicker/index.html">
-    <img src="https://static.wikia.nocookie.net/cookieclicker/images/5/5a/PerfectCookie.png">
-    <div class="game-title">Cookie Clicker</div>
-  </a>
-  
-<a class="game" href="burritobison.html">
+    <!-- COOKIE CLICKER -->
 
-    <img src="https://img.gamedistribution.com/9c71c87de5c94108a8e9bcd3cc036aa1-512x384.jpeg">
+    <a class="game" href="cookieclicker/index.html">
 
-    <div class="game-title">
-        Burrito Bison
-    </div>
+        <img src="https://static.wikia.nocookie.net/cookieclicker/images/5/5a/PerfectCookie.png">
 
-</a>
-  
+        <div class="game-title">
+            Cookie Clicker
+        </div>
+
+    </a>
+
+    <!-- BURRITO BISON -->
+
+    <a class="game" href="burritobison.html">
+
+        <img src="burritobison.png">
+
+        <div class="game-title">
+            Burrito Bison
+        </div>
+
+    </a>
+
+</div>
+
+<!-- FOOTER -->
+
+<div class="footer">
+    © 2026 Advanced Trigonometry Solutions
 </div>
 
 </body>
